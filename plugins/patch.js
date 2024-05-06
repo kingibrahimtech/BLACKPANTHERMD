@@ -203,7 +203,7 @@ astro_patch.smd(
   {
     cmdname: "menu",
     desc: "Help list",
-    react: "📃",
+    react: "🐯",
     desc: "To show all avaiable commands.",
     type: "user",
     filename: __filename,
@@ -263,13 +263,13 @@ astro_patch.smd(
         Config.menu.trim().startsWith("1") ||
         Config.menu.toLowerCase().includes("menu1")
       ) {
-        menuThemeHeader = "╭━━━〔 *" + Config.botname + "* 〕━━━┈⊷";
-        menuThemeCommandPrefix = "┃✵│";
-        menuThemeFooter = "┃✵╰──────────────\n╰━━━━━━━━━━━━━━━┈⊷";
-        menuThemeCategoryHeader = "╭─────────────┈⊷\n│「";
-        menuThemeCategoryFooter = "」\n╰┬────────────┈⊷";
-        menuThemeCommandPrefix = "││◦➛";
-        menuThemeCommandFooter = "│╰────────────┈⊷\n╰─────────────┈⊷";
+        menuThemeHeader = "▱▰▱〔 *" + Config.botname + "* 〕▱▰▱";
+        menuThemeCommandPrefix = "┋⍟┃";
+        menuThemeFooter = "┋⍟╰──────────────\n╰━━━━━━━━━━━━━━━┈⊷";
+        menuThemeCategoryHeader = "╭─────────────┈⍟\n┋「";
+        menuThemeCategoryFooter = "」\n╰┬────────────┈⍟";
+        menuThemeCommandPrefix = "┋│◦➛";
+        menuThemeCommandFooter = "┋╰────────────┈⊷\n╰─────────────┈⊷";
       } else if (
         menuThemeType === 2 ||
         Config.menu.trim().startsWith("2") ||
