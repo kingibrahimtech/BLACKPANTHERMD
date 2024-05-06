@@ -268,28 +268,28 @@ astro_patch.smd(
         menuThemeFooter = "┋⍟╰──────────────\n╰━━━━━━━━━━━━━━━┈⊷";
         menuThemeCategoryHeader = "╭─────────────┈⍟\n┋「";
         menuThemeCategoryFooter = "」\n╰┬────────────┈⍟";
-        menuThemeCommandPrefix = "┋│◦➛";
-        menuThemeCommandFooter = "┋╰────────────┈⊷\n╰─────────────┈⊷";
+        menuThemeCommandPrefix = "┋⍟┃";
+        menuThemeCommandFooter = "┋╰────────────┈⍟\n╰─────────────┈⍟";
       } else if (
         menuThemeType === 2 ||
         Config.menu.trim().startsWith("2") ||
         Config.menu.toLowerCase().includes("menu2")
       ) {
-        menuThemeHeader = "╭═══ *" + Config.botname + "* ═══⊷\n┃❃╭──────────────";
-        menuThemeCommandPrefix = "┃❃│";
-        menuThemeFooter = "┃❃╰───────────────\n╰═════════════════⊷";
-        menuThemeCategoryHeader = "╭─❏";
-        menuThemeCategoryFooter = "❏";
-        menuThemeCommandPrefix = "┃❃│";
-        menuThemeCommandFooter = "┃❃╰───────────────\n╰═════════════════⊷";
+        menuThemeHeader = "⍟⍟⍟ *" + Config.botname + "* ⍟⍟⍟\n┋⍟╭──────────────";
+        menuThemeCommandPrefix = "┋❃│";
+        menuThemeFooter = "┋❃╰───────────────\n╰═════════════════⍟";
+        menuThemeCategoryHeader = "╭─⍟";
+        menuThemeCategoryFooter = "⍟";
+        menuThemeCommandPrefix = "┋⍟┃";
+        menuThemeCommandFooter = "┋⍟╰───────────────\n╰═════════════════⍟";
       } else {
         menuThemeHeader = "╭〘  " + Config.botname + "  〙";
         menuThemeCommandPrefix = "│ │";
-        menuThemeFooter = "╰═══════════════⊷";
-        menuThemeCategoryHeader = "╭─❍";
-        menuThemeCategoryFooter = "══⊷❍";
-        menuThemeCommandPrefix = "│";
-        menuThemeCommandFooter = "╰════════════─⊷";
+        menuThemeFooter = "╰═══════════════⍟";
+        menuThemeCategoryHeader = "╭─⍟";
+        menuThemeCategoryFooter = "══⍟⍟";
+        menuThemeCommandPrefix = "┋";
+        menuThemeCommandFooter = "╰════════════─⍟";
       }
 
       const categorizedCommands = {};
@@ -318,7 +318,7 @@ ${menuThemeCommandPrefix} *ᴄᴏᴍᴍᴀɴᴅs:* ${commands.length}
 ${menuThemeCommandPrefix} *ᴜsᴀɢᴇ ᴛʀᴇɴᴅ:* ${trend_usage}
 ${menuThemeCommandPrefix} *ᴅᴀᴛᴀʙᴀsᴇ:* ${database_info}
 ${menuThemeFooter}                         
-*ᴀsᴛᴀ ᴘᴀᴛᴄʜ 𝟸.5.𝟶*
+*Pᵒʷᵉʳᵉᵈ ᵇʸ Iᵇʳᵃʰⁱᵐ Aᵈᵃᵐˢ*
 ${readmore}`;
 
       for (const category in categorizedCommands) {
@@ -376,7 +376,7 @@ smd(
         _0x22514a.date +
         "\n*➮ɴᴏᴡ ᴛɪᴍᴇ :* " +
         _0x22514a.time +
-        "\n\n➮Fᴏᴜɴᴅᴇʀ- Astropeda Team\n➮Oᴡɴᴇʀ - " +
+        "\n\n➮Fᴏᴜɴᴅᴇʀ- 𝐈𝐁𝐑𝐀𝐇𝐈𝐌 𝐓𝐄𝐂𝐇\n➮Oᴡɴᴇʀ - " +
         Config.ownername +
         "\n➮Nᴜᴍ - " +
         owner.split(",")[0] +
@@ -384,7 +384,7 @@ smd(
         formatp(os.totalmem() - os.freemem()) +
         "/" +
         formatp(os.totalmem()) +
-        "\n\n *🧑‍💻 :*  ᴀsᴛᴀ ᴍᴅ ɪꜱ ɴᴏᴡ Aᴠᴀɪʟᴀʙʟᴇ\n\n" +
+        "\n\n *🧑‍💻 :*  Panther md ɪꜱ ɴᴏᴡi Aᴠᴀɪʟᴀʙʟᴇ\n\n" +
         readmore +
         "\n╭──❰ *ALL MENU* ❱\n│🏮 Lɪꜱᴛ\n│🏮 Cᴀᴛᴇɢᴏʀʏ\n│🏮 Hᴇʟᴘ\n│🏮 Aʟɪᴠᴇ\n│🏮 Uᴘᴛɪᴍᴇ\n│🏮 Wᴇᴀᴛʜᴇʀ\n│🏮 Lɪɴᴋ\n│🏮 Cᴘᴜ\n│🏮 Rᴇᴘᴏꜱɪᴛᴏʀʏ\n╰─────────────⦁"
       ).trim();
@@ -561,7 +561,7 @@ smd(
       const designs = [
         async () => {
           const imageBuffer = await axios.get(
-            "https://i.imgur.com/z20pSwu.jpeg",
+            ",https://telegra.ph/file/af1705e9b4d6aa0bc0f96.jpg",
             {
               responseType: "arraybuffer",
             }
@@ -578,13 +578,13 @@ smd(
           const quoteText = `\n\n*"${quote.result.body}"*\n_- ${quote.result.author}_`;
           const end = new Date().getTime();
           const pingSeconds = (end - start) / 1000;
-          const captionText = `ᴀsᴛᴀ ᴍᴅ 𝟸.𝟶.𝟶 ᴘᴀᴛᴄʜ\n\n*Ping:* ${pingSeconds} seconds${quoteText}\n\nᴀsᴛᴀ ᴍᴅ`;
+          const captionText = `𝑷𝑨𝑵𝑻𝑯𝑬𝑹 𝑴𝑫\n\n*Ping:* ${pingSeconds} seconds${quoteText}\n\n𝑷𝑨𝑵𝑻𝑯𝑬𝑹 𝑴𝑫`;
 
           return { image: imageBuffer.data, caption: captionText };
         },
         async () => {
           const imageBuffer = await axios.get(
-            "https://i.imgur.com/lIo3cM2.jpeg",
+            ",https://telegra.ph/file/01bae0068863f48aff101.jpg",
             {
               responseType: "arraybuffer",
             }
@@ -600,7 +600,7 @@ smd(
 
           const end = new Date().getTime();
           const pingSeconds = (end - start) / 1000;
-          const captionText = `ᴀsᴛᴀ ᴍᴅ 𝟸.𝟶.𝟶 ᴘᴀᴛᴄʜ\n\n*Ping:* ${pingSeconds} seconds\n\n*Fact:*\n${fact.result.fact}\n\nᴀsᴛᴀ ᴍᴅ`;
+          const captionText = `𝑷𝑨𝑵𝑻𝑯𝑬𝑹 𝑴𝑫\n\n*Ping:* ${pingSeconds} seconds\n\n*Fact:*\n${fact.result.fact}\n\n𝑷𝑨𝑵𝑻𝑯𝑬𝑹 𝑴𝑫`;
 
           return { image: imageBuffer.data, caption: captionText };
         },
@@ -622,7 +622,7 @@ smd(
 
           const end = new Date().getTime();
           const pingSeconds = (end - start) / 1000;
-          const captionText = `ᴀsᴛᴀ ᴍᴅ 𝟸.𝟶.𝟶 ᴘᴀᴛᴄʜ\n\n*Ping:* ${pingSeconds} seconds\n\n*Line:*\n${line.result}\n\nᴀsᴛᴀ ᴍᴅ`;
+          const captionText = `𝑷𝑨𝑵𝑻𝑯𝑬𝑹 𝑴𝑫\n\n*Ping:* ${pingSeconds} seconds\n\n*Line:*\n${line.result}\n\n𝑷𝑨𝑵𝑻𝑯𝑬𝑹 𝑴𝑫`;
 
           return { image: imageBuffer.data, caption: captionText };
         },
@@ -669,13 +669,13 @@ smd(
 
       const ramUsage = process.memoryUsage().heapTotal / 1024 / 1024;
 
-      const message = `*ᴀsᴛᴀ ᴍᴅ ʀᴜɴɴɪɴɢ sɪɴᴄᴇ:* ${uptimeHours}h ${uptimeMinutes}ᴍ ${uptimeSeconds}s\n \t_ʜᴇʀᴇ's ᴍᴏʀᴇ ɪɴғᴏ_\n*ʀᴀᴍ ᴜsᴀɢᴇ:* ${ramUsage.toFixed(2)} MB\n*ᴄᴘᴜ ɴᴀᴍᴇ:* ${cpuModel}`;
+      const message = `*𝑷𝒂𝒏𝒕𝒉𝒆𝒓 ᴍᴅ ʀᴜɴɴɪɴɢ sɪɴᴄᴇ:* ${uptimeHours}h ${uptimeMinutes}ᴍ ${uptimeSeconds}s\n \t_ʜᴇʀᴇ's ᴍᴏʀᴇ ɪɴғᴏ_\n*ʀᴀᴍ ᴜsᴀɢᴇ:* ${ramUsage.toFixed(2)} MB\n*ᴄᴘᴜ ɴᴀᴍᴇ:* ${cpuModel}`;
       const contextInfo = {
         isForwarded: true,
         forwardingScore: 999,
-        title: "Asta MD Running Since",
+        title: "Panther MD Running Since",
         body: message,
-        footerText: "Asta MD 2024",
+        footerText: "Panther md 2024",
         isSendNotificationMsg: true,
         mentionedJid: [],
       };
@@ -696,7 +696,7 @@ astro_patch.cmd({
       const {
         commands: _0x7cfe13
       } = require("../lib");
-      let _0x95885d = "\n\t*ᴀsᴛᴀ ᴍᴅ ᴄᴏᴍᴍᴀɴᴅs ɪɴғᴏ*  \n";
+      let _0x95885d = "\n\t*Panther ᴍᴅ ᴄᴏᴍᴍᴀɴᴅs ɪɴғᴏ*  \n";
       for (let _0x2bd72c = 0; _0x2bd72c < _0x7cfe13.length; _0x2bd72c++) {
         if (_0x7cfe13[_0x2bd72c].pattern == undefined) {
           continue;
@@ -996,7 +996,7 @@ function _0x593b() {
     "schedule",
     "_COMMANDS*  \n┗━━━━━━━━━━━━━━━━━━━━━━━\n\n\n",
     "text",
-    "┏━━━━━━━━━━━━━━━━━━━━━━━\n┃\t*ASTA-MD_",
+    "┏━━━━━━━━━━━━━━━━━━━━━━━\n┃\t*PANTHER-MD_",
     "2716190HSgAcg",
     "info",
     "endsWith",
